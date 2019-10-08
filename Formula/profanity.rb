@@ -34,6 +34,7 @@ class Profanity < Formula
     system "./bootstrap.sh" if build.head?
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
+                          "--enable-omemo",
                           "--prefix=#{prefix}"
     system "make", "install"
   end

@@ -38,8 +38,7 @@ class Profanity < Formula
                           "--disable-silent-rules",
                           "--enable-omemo",
                           "--enable-omemo",
-                          "--prefix=#{prefix}",
-                          "PYTHON_FRAMEWORK=/usr/local/Cellar/python/3.7.4_1/Frameworks/Python.framework"
+                          "--prefix=#{prefix}"
     system "make", "install"
   end
 

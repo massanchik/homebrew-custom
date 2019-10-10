@@ -38,7 +38,8 @@ class Profanity < Formula
                           "--disable-silent-rules",
                           "--enable-omemo",
                           "--enable-omemo",
-                          "--prefix=#{prefix}"
+                          "--prefix=#{prefix}",
+                          "PYTHON_VERSION=3"
     system "make", "install"
   end
 

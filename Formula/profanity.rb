@@ -37,7 +37,9 @@ class Profanity < Formula
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--enable-omemo",
-                          "--prefix=#{prefix}"
+                          "--enable-omemo",
+                          "--prefix=#{prefix}",
+                          "PYTHON_FRAMEWORK=/usr/local/Cellar/python"
     system "make", "install"
   end
 

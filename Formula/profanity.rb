@@ -30,6 +30,7 @@ class Profanity < Formula
   depends_on "readline"
   depends_on "terminal-notifier"
   depends_on "libsignal-protocol-c"
+  depends_on "python"
 
   def install
     system "./bootstrap.sh" if build.head?

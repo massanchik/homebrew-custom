@@ -39,7 +39,7 @@ class Profanity < Formula
                           "--enable-omemo",
                           "--enable-omemo",
                           "--prefix=#{prefix}",
-                          "PYTHON_FRAMEWORK=/usr/local/Cellar/python/3.7.4_1"
+                          "PYTHON_FRAMEWORK=/usr/local/Cellar/python/3.7.4_1/Frameworks/Python.framework"
     system "make", "install"
   end
 
